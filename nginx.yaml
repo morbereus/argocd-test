@@ -5,6 +5,10 @@ metadata:
   labels:
     app: nginx
 spec:
+  source:
+    repoURL: https://github.com/morbereus/argocd-test.git
+    targetRevision: main
+    path: / 
   replicas: 3
   selector:
     matchLabels:
