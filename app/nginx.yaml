@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/morbereus/argocd-test.git
     targetRevision: main
-    path: / 
+    path: app
   replicas: 3
   selector:
     matchLabels:
