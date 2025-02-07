@@ -21,8 +21,9 @@ spec:
     matchLabels:
       app: nginx-test
   template:
-    nodeSelector:
-      kubernetes.io/hostname: gadgetzan
+    spec:
+      nodeSelector:
+        kubernetes.io/hostname: gadgetzan
     metadata:
       labels:
         app: nginx-test
