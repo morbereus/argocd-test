@@ -21,13 +21,14 @@ spec:
     matchLabels:
       app: nginx-test
   template:
-    spec:
-      nodeSelector:
-        kubernetes.io/hostname: gadgetzan
+      
+      
     metadata:
       labels:
         app: nginx-test
     spec:
+      nodeSelector:
+        kubernetes.io/hostname: gadgetzan
       containers:
         - name: nginx
           image: nginx:latest
