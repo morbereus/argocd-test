@@ -14,10 +14,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  labels:
-    app.kubernetes.io/instance: nginx-test
   name: nginx-test
-  namespace: default
 spec:
   replicas: 4
   selector:
@@ -29,8 +26,7 @@ spec:
         app: nginx-test
     spec:
       containers:
-        - image: nginx:latest
-          name: nginx
+        - name: nginx
+          image: nginx:latest
           ports:
             - containerPort: 80
-
