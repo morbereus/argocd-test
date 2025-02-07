@@ -22,7 +22,7 @@ spec:
       app: nginx-test
   template:
     nodeSelector:
-      kubernetes.io/hostname: Gadgetzan
+      kubernetes.io/hostname: gadgetzan
     metadata:
       labels:
         app: nginx-test
